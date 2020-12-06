@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Some-Fin Networking</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css' )}}">
+    </head>
+    <body>
+        <div class="nav col-12">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" class="col-3" />
+            <ul class="col-9 nav justify-content-end">
+                <li class="nav-link active"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#about">About_Sharks</a></li>
+                <li class="nav-link"><a href="#maps">Shark_Network</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="header_title">
+                <h1>Some-Fin Networking</h1>
+                <p>The networking site for sharks. View the best places to network with the sharks around you and ask them "Water you up to, mate?"</p>
+            </div>
+        </div>
+        <div class="container-fluid" id="about" >
+            <div class="card-group" style="max-width: 100%;">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Blahaj</h5>
+                        <p>A one of its kind</p>
+                        <p class="card-text">Blahaj the IKEA's shark toy is going viral as people put it in various (and often humorous) situations, snapping and sharing photos online. From reading the morning newspaper to playing a guitar, this shark is the star of many scenarios.</p>
+                    </div>
+                    <div class="card-footer"><a href="https://www.ikea.com/in/en/p/blahaj-soft-toy-shark-10373589/" class="card-link">Read more</a></div>
+                </div>
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Hammerhead Shark</h5>
+                        <p class="card-text">The hammerhead sharks are a group of sharks that form the family Sphyrnidae, so named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a "hammer" shape called a cephalofoil.</p>
+                    </div>
+                    <div class="card-footer"><a href="https://en.wikipedia.org/wiki/Hammerhead_shark" class="card-link">Read more</a></div>
+                </div>
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mackerel Shark</h5>
+                        <p class="card-text">The Lamniformes are an order of sharks commonly known as mackerel sharks. It includes some of the most familiar species of sharks, such as the great white, as well as more unusual representatives, such as the goblin shark and megamouth shark.</p>
+                    </div>
+                    <div class="card-footer"><a href="https://en.wikipedia.org/wiki/Lamniformes" class="card-link">Read more</a></div>
+                </div>
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Whale Shark</h5>
+                        <p class="card-text">The whale shark is a slow-moving, filter-feeding carpet shark and the largest known extant fish species. The largest confirmed individual had a length of 18.8 m. The whale shark holds many records for size in the animal kingdom, most notably being by far the largest living nonmammalian vertebrate.</p>
+                    </div>
+                    <div class="card-footer"><a href="https://en.wikipedia.org/wiki/Whale_shark" class="card-link">Read more</a></div>
+                </div>
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Thresher Shark</h5>
+                        <p class="card-text">Thresher sharks are large lamniform sharks of the family Alopiidae found in all temperate and tropical oceans of the world; the family contains three extant species, all within the genus Alopias. All three thresher shark species have been listed as vulnerable to extinction by the World Conservation Union since 2007</p>
+                    </div>
+                    <div class="card-footer"><a href="https://en.wikipedia.org/wiki/Thresher_shark" class="card-link">Read more</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="network" id="maps">
+            <h1>Network with Sharks!!!</h1>
+            <p>Great White Sharks sightings:</p>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1OCFPLNBSkNoC74jnX9jdv0jU11Y&hl=en" class="shark-map"></iframe>
+            <a href="https://earth.google.com/web/@-18.295454,178.021646,0a,1000d,30y,0h,0t,0r/data=Cj0SOxIgNWE3NDMxZThmNGEzMTFlNjhkZjFlOTNmN2I5OTljNzUiF2VmX29jZWFuYWdlbmN5X3NoYXJrc18w" class="btn btn-primary">View other sightings on Google Earth</a>
+        </div>
+
+
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
