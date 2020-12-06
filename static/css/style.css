@@ -5,15 +5,33 @@ body{
     font-family: 'JetBrains Mono', monospace;;
 }
 
-
 .header{
-    background: url('../img/header.jpg') no-repeat center;
     max-width: 100%;
     text-align: center;
-    height: 600px;
+    height: 800px;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 200px
+    padding-top: 300px;
+    color: #ffffff;
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('../img/header.jpg') no-repeat center;
+    filter: brightness(0.5);
+}
+.header .header_title h1{
+    font-weight: 900;
+    font-size: 60px;
+    position: relative;
+}
+.header .header_title p{
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
 }
 
 
@@ -22,7 +40,7 @@ body{
     margin-top: 0px;
     height: 50px;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 22px;
     vertical-align: middle;
 }
 .nav div{
@@ -30,8 +48,7 @@ body{
     padding: 0px;
 }
 .nav div img{
-    height: 40px;
-    width: 60px;
+    height: 50px;
     margin-left: 100px;
 }
 .nav ul{
@@ -43,8 +60,8 @@ body{
     float: left;
     padding: 2px;
     margin: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .nav ul li a{
     text-decoration: none;
@@ -73,4 +90,44 @@ div{
 #about{
     background-color: #343a40;
     margin-top: 0px;
+}
+#about .card-group{
+    margin-top: 0px;
+    margin-left: 25px;
+}
+.card-img-top{
+    height: 200px;
+    width: auto;
+}
+
+#memes{
+    width: 100%;
+    height: fit-content;
+    background-color: #676B70;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-rows: 
+      repeat(2, 250px);
+    grid-template-columns: 
+      repeat(6, 250px);
+    grid-gap: 0px;
+}
+.grid {
+    margin:20px auto;
+    margin-bottom: 0px;
+}
+  
+.grid > .item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
 }
